@@ -1,0 +1,106 @@
+.gallery {
+  padding: 80px 0;
+  background-color: var(--color-bg);
+  overflow: hidden;
+}
+
+.sectionTitle {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  color: var(--color-sage);
+  margin-bottom: 40px;
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+
+.swiper {
+  padding-bottom: 40px;
+  margin-bottom: 32px;
+}
+
+.swiper :global(.swiper-pagination-bullet) {
+  background-color: var(--color-sage-light);
+  opacity: 0.5;
+}
+
+.swiper :global(.swiper-pagination-bullet-active) {
+  background-color: var(--color-sage);
+  opacity: 1;
+}
+
+.slide {
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  aspect-ratio: 4 / 5;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.slide:hover .image {
+  transform: scale(1.02);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4px;
+  padding: 0 24px;
+}
+
+.gridItem {
+  aspect-ratio: 1;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.gridImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.gridItem:hover .gridImage {
+  transform: scale(1.05);
+}
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.closeButton {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lightboxImage {
+  max-width: 100%;
+  max-height: 90vh;
+  object-fit: contain;
+  border-radius: 8px;
+}

@@ -1,0 +1,64 @@
+.greeting {
+  padding: 80px 24px;
+  background-color: var(--color-bg-light);
+}
+
+.divider {
+  margin-bottom: 40px;
+}
+
+.divider span {
+  display: inline-block;
+  color: var(--color-sage);
+  font-size: 1.5rem;
+}
+
+.title {
+  font-family: var(--font-serif);
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: var(--color-text);
+  margin-bottom: 32px;
+  letter-spacing: 0.05em;
+}
+
+.message {
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  line-height: 2;
+  color: var(--color-text);
+  white-space: pre-line;
+  margin-bottom: 48px;
+}
+
+.parents {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 32px 20px;
+  background-color: var(--color-bg);
+  border-radius: 8px;
+}
+
+.parentRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 0.9rem;
+}
+
+.parentNames {
+  color: var(--color-text-light);
+}
+
+.relation {
+  color: var(--color-text-light);
+  font-size: 0.85rem;
+}
+
+.childName {
+  font-family: var(--font-serif);
+  font-weight: 500;
+  color: var(--color-text);
+}

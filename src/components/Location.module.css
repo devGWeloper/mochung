@@ -1,0 +1,134 @@
+.location {
+  padding: 80px 24px;
+  background-color: var(--color-bg-light);
+}
+
+.sectionTitle {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  color: var(--color-sage);
+  margin-bottom: 40px;
+  letter-spacing: 0.1em;
+}
+
+.venueInfo {
+  margin-bottom: 32px;
+}
+
+.venueName {
+  font-family: var(--font-serif);
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: var(--color-text);
+  margin-bottom: 8px;
+}
+
+.venueHall {
+  font-size: 0.95rem;
+  color: var(--color-text);
+  margin-bottom: 12px;
+}
+
+.address {
+  font-size: 0.9rem;
+  color: var(--color-text-light);
+  margin-bottom: 4px;
+}
+
+.addressDetail {
+  font-size: 0.85rem;
+  color: var(--color-text-light);
+  margin-bottom: 8px;
+}
+
+.tel {
+  font-size: 0.85rem;
+  color: var(--color-text-light);
+}
+
+.map {
+  width: 100%;
+  height: 250px;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 16px;
+  background-color: var(--color-bg);
+}
+
+.mapPlaceholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text-light);
+  font-size: 0.85rem;
+  gap: 4px;
+}
+
+.mapButtons {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+
+.mapButton {
+  padding: 10px 16px;
+  font-size: 0.85rem;
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-sage-light);
+  border-radius: 20px;
+  color: var(--color-text);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.mapButton:hover {
+  background-color: var(--color-sage);
+  border-color: var(--color-sage);
+  color: var(--color-white);
+}
+
+.transport {
+  background-color: var(--color-bg);
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.transportItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--color-sage-light);
+}
+
+.transportItem:last-child {
+  border-bottom: none;
+}
+
+.transportIcon {
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.transportInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  text-align: left;
+}
+
+.transportLabel {
+  font-size: 0.8rem;
+  color: var(--color-sage);
+  font-weight: 500;
+}
+
+.transportDetail {
+  font-size: 0.85rem;
+  color: var(--color-text);
+  line-height: 1.5;
+}

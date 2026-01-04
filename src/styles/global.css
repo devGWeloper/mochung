@@ -1,0 +1,136 @@
+:root {
+  --color-bg: #F5F0E8;
+  --color-bg-light: #FDFBF7;
+  --color-sage: #8B9D83;
+  --color-sage-light: #A8B8A0;
+  --color-dusty-rose: #D4A5A5;
+  --color-dusty-rose-light: #E8C4C4;
+  --color-text: #4A4A4A;
+  --color-text-light: #7A7A7A;
+  --color-gold: #C9A961;
+  --color-white: #FFFFFF;
+
+  --font-serif: 'Noto Serif KR', serif;
+  --font-sans: 'Noto Sans KR', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  max-width: 480px;
+  margin: 0 auto;
+  background-color: var(--color-bg-light);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+section {
+  padding: 60px 24px;
+  text-align: center;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-serif);
+  font-weight: 500;
+}
+
+.section-title {
+  font-size: 1.25rem;
+  color: var(--color-sage);
+  margin-bottom: 32px;
+  letter-spacing: 0.1em;
+}
+
+.divider {
+  width: 1px;
+  height: 40px;
+  background-color: var(--color-sage-light);
+  margin: 0 auto;
+}
+
+.divider-leaf {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin: 20px 0;
+}
+
+.divider-leaf::before,
+.divider-leaf::after {
+  content: '';
+  width: 40px;
+  height: 1px;
+  background-color: var(--color-sage-light);
+}
+
+.divider-leaf span {
+  color: var(--color-sage);
+  font-size: 1.2rem;
+}
+
+button {
+  font-family: var(--font-sans);
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background-color: var(--color-sage);
+  color: var(--color-white);
+  padding: 12px 24px;
+  border-radius: 25px;
+  font-size: 0.9rem;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-sage-light);
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 1px solid var(--color-sage);
+  color: var(--color-sage);
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+}
+
+.btn-outline:hover {
+  background-color: var(--color-sage);
+  color: var(--color-white);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeInUp 0.8s ease forwards;
+}

@@ -1,0 +1,129 @@
+.datetime {
+  padding: 80px 24px;
+  background-color: var(--color-bg);
+}
+
+.sectionTitle {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  color: var(--color-sage);
+  margin-bottom: 40px;
+  letter-spacing: 0.1em;
+}
+
+.info {
+  margin-bottom: 40px;
+}
+
+.date {
+  font-family: var(--font-serif);
+  font-size: 1.3rem;
+  color: var(--color-text);
+  margin-bottom: 8px;
+}
+
+.time {
+  font-size: 1.1rem;
+  color: var(--color-text);
+  margin-bottom: 8px;
+}
+
+.venue {
+  font-size: 0.9rem;
+  color: var(--color-text-light);
+}
+
+.calendar {
+  background-color: var(--color-bg-light);
+  border-radius: 12px;
+  padding: 24px 16px;
+  margin-bottom: 40px;
+}
+
+.calendarHeader {
+  margin-bottom: 20px;
+}
+
+.monthYear {
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  color: var(--color-text);
+  letter-spacing: 0.1em;
+}
+
+.dayNames {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  margin-bottom: 12px;
+  font-size: 0.8rem;
+  color: var(--color-text-light);
+}
+
+.week {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  margin-bottom: 8px;
+}
+
+.dateCell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  font-size: 0.9rem;
+  color: var(--color-text);
+}
+
+.sunday {
+  color: var(--color-dusty-rose);
+}
+
+.saturday {
+  color: var(--color-sage);
+}
+
+.weddingDay {
+  background-color: var(--color-sage);
+  color: var(--color-white) !important;
+  border-radius: 50%;
+  font-weight: 500;
+}
+
+.countdown {
+  background: linear-gradient(135deg, var(--color-sage-light) 0%, var(--color-sage) 100%);
+  border-radius: 12px;
+  padding: 24px;
+  color: var(--color-white);
+}
+
+.countdownLabel {
+  font-size: 0.85rem;
+  margin-bottom: 16px;
+  opacity: 0.9;
+}
+
+.countdownBoxes {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.countdownBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 60px;
+}
+
+.countdownNumber {
+  font-family: var(--font-serif);
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.countdownUnit {
+  font-size: 0.75rem;
+  margin-top: 4px;
+  opacity: 0.9;
+}
